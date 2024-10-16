@@ -1,58 +1,107 @@
-.footer{
-    display:flex;
+/* Default styles for larger screens */
+.footer {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
-    gap:50px;
+    align-items: center;
+    gap: 50px;
 }
 
-.footer-logo{
-    display:flex;
-    align-items:center;
-    gap:20px;
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.footer-logo p{
+.footer-logo p {
     color: #383838;
-    font-size:46px;
-    font-weight:700;
+    font-size: 46px;
+    font-weight: 700;
 }
 
-.footer-links{
-    display:flex;
+.footer-links {
+    display: flex;
     list-style: none;
-    gap:50px;
+    gap: 50px;
     color: #252525;
-    font-size:20px;
+    font-size: 20px;
 }
 
-.footer-links li{
-    display:flex;
-    gap:20px;
+.footer-links li {
+    display: flex;
+    gap: 20px;
 }
 
-.footer-icons-container{
-    padding:10px;
-    padding-bottom:6px;
+.footer-icons-container {
+    padding: 10px;
+    padding-bottom: 6px;
     background-color: #fbfbfb;
-    border:1px solid #ebebeb;
+    border: 1px solid #ebebeb;
 }
 
-.footer-copyright{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:30px;
-    width:100%;
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
     margin-bottom: 30px;
-    color:#1a1a1a;
-    font-size:20px;
+    color: #1a1a1a;
+    font-size: 20px;
 }
 
-.footer-copyright hr{
-    width:80%;
-    border:none;
-    border-radius:10px;
-    height:3px;
+.footer-copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
     background-color: #ebebeb;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .footer {
+        gap: 30px;
+    }
+
+    .footer-logo p {
+        font-size: 36px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .footer-links li {
+        gap: 10px;
+    }
+
+    .footer-copyright {
+        gap: 20px;
+        font-size: 18px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .footer {
+        gap: 20px;
+    }
+
+    .footer-logo p {
+        font-size: 28px;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+    .footer-copyright {
+        gap: 15px;
+        font-size: 16px;
+    }
 }

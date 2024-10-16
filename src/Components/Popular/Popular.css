@@ -1,28 +1,64 @@
-.popular{
-    display:flex;
+.popular {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap:10px;
-    height:90vh;
-}
-
-.popular h1{
-    color:#171717;
-    font-size:50px;
+    gap: 10px;
+    height: 90vh;
+  }
+  
+  .popular h1 {
+    color: #171717;
+    font-size: 50px;
     font-weight: 700;
-    margin-top:120px;
-}
-
-.popular hr{
+    margin-top: 120px;
+  }
+  
+  .popular hr {
     width: 200px;
     height: 6px;
     background: #171717;
     border-radius: 10px;
-
-}
-
-.popular-item{
+  }
+  
+  .popular-item {
     display: flex;
-    margin-top:50px;
-    gap:30px;
-}
+    margin-top: 50px;
+    gap: 30px;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* For screens smaller than 768px (tablets and mobiles) */
+  @media (max-width: 767px) {
+    .popular {
+      height: 80vh; /* adjust height for smaller screens */
+    }
+    .popular h1 {
+      font-size: 30px; /* reduce font size for smaller screens */
+      margin-top: 80px; /* adjust margin top for smaller screens */
+    }
+    .popular hr {
+      width: 150px; /* reduce width of hr for smaller screens */
+    }
+    .popular-item {
+      flex-direction: column; /* change flex direction to column for smaller screens */
+      gap: 20px; /* reduce gap for smaller screens */
+    }
+  }
+  
+  /* For screens smaller than 480px (mobiles) */
+  @media (max-width: 479px) {
+    .popular {
+      height: 70vh; /* adjust height for even smaller screens */
+    }
+    .popular h1 {
+      font-size: 20px; /* reduce font size even further for smaller screens */
+      margin-top: 60px; /* adjust margin top for smaller screens */
+    }
+    .popular hr {
+      width: 100px; /* reduce width of hr even further for smaller screens */
+    }
+    .popular-item {
+      gap: 15px; /* reduce gap even further for smaller screens */
+    }
+  }

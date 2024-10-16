@@ -80,3 +80,52 @@
     color:white;
 }
 
+/* Media queries for responsiveness */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nav-menu li {
+        gap: 10px;
+    }
+    .nav-login-cart {
+        gap: 20px;
+    }
+    .nav-login-cart button {
+        width: 100px;
+        height: 35px;
+        font-size: 18px;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+    .nav-menu {
+        gap: 10px;
+    }
+    .nav-menu li {
+        gap: 5px;
+    }
+    .nav-login-cart {
+        gap: 10px;
+    }
+    .nav-login-cart button {
+        width: 80px;
+        height: 30px;
+        font-size: 16px;
+    }
+    .nav-cart-count {
+        margin-top: -25px;
+        margin-left: -40px;
+    }
+}
